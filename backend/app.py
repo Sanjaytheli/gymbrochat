@@ -4,8 +4,8 @@ from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import StreamingResponse
 import cohere
 from dotenv import load_dotenv
-from gymbrochat.backend.llm_adapters.cohere_prompts import GYMBRO_SYSTEM_PROMPT
-from gymbrochat.backend.schemas.models import ChatRequest
+from llm_adapters.cohere_prompts import GYMBRO_SYSTEM_PROMPT
+from schemas.models import ChatRequest
 
 # Load environment variables
 load_dotenv()
